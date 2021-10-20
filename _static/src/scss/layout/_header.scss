@@ -1,0 +1,109 @@
+@use '../global' as global;
+
+$header-height: 80px;
+
+.header {
+  max-width: 100%;
+  height: $header-height;
+  z-index: map-get(global.$layer, "header");
+  background-color: global.$main-color;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    max-width: 1250px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  &__left {
+    margin-right: auto;
+
+    .header__logo {
+      max-width: 105px;
+      margin-right: auto;
+      display: block;
+    }
+  }
+
+  &__right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  &-form {
+    margin-right: 30px;
+  }
+
+
+  &-nav {
+
+    &__menu {
+      margin-left: auto;
+    }
+
+    &__list {
+      display: flex;
+    }
+
+    &__item {
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+
+    &__link {
+      color: #000;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 8px 14px;
+      text-align: center;
+      display: inline-block;
+      border-radius: 4px;
+
+      &:hover {
+        color: #000;
+        opacity: .8;
+      }
+
+      &.login {
+        background-color: global.$duplicate-color;
+        color: global.$base-color;
+      }
+
+      &.sign_up {
+        background-color: global.$base-color;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.search-text {
+  width: 250px;
+  height: 32px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  padding: 0 8px;
+}
+
+.search-submit {
+  position: absolute;
+  right: 0px;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  margin: 0;
+  background: #fff url(../../img/ico-loupe.png) no-repeat center center;
+  background-size: 12px;
+  border: none;
+}
