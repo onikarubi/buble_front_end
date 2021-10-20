@@ -1,0 +1,22 @@
+.top {
+  margin-top: 140px;
+  margin-bottom: 120px;
+}
+
+.article {
+  margin-bottom: 30px;
+}
+.article:nth-last-child(-n+3) {
+  margin-bottom: 0;
+}
+.article:hover {
+  opacity: 0.8;
+}
+
+.card-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+/*# sourceMappingURL=top.css.map */

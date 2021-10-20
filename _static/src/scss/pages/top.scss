@@ -1,0 +1,26 @@
+@use '../global' as global;
+
+.top {
+  margin-top: 140px;
+  margin-bottom: 120px;
+}
+
+.article {
+  margin-bottom: 30px;
+
+  &:nth-last-child(-n+3) {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    opacity: .8;
+  }
+}
+
+.card-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
