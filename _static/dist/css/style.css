@@ -240,11 +240,41 @@ body {
           justify-content: center;
   height: calc(100vh - 80px);
 }
-.page-login .form-login {
-  width: 360px;
-  border: solid 1px #E6E6E6;
-  border-radius: 4px;
-  padding: 40px 38px 30px;
+
+.page-siu {
+  height: calc(100vh - 80px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.page-siu__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.page-siu__left {
+  max-width: 500px;
+  margin-right: auto;
+}
+.page-siu__right {
+  margin-left: auto;
+}
+.page-siu__title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.page-siu__text {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.7;
 }
 
 .form-area {
@@ -254,6 +284,13 @@ body {
   display: block;
   font-size: 14px;
   margin-bottom: 10px;
+  position: relative;
+}
+.form-area__label.require::after {
+  content: "必須";
+  color: #ED4956;
+  font-size: 12px;
+  margin-left: 12px;
 }
 .form-area__text {
   width: 100%;
@@ -261,6 +298,7 @@ body {
   height: 40px;
   border-radius: 4px;
   padding: 0 8px;
+  font-size: 15px;
 }
 .form-area:first-child {
   margin-bottom: 16px;
@@ -281,5 +319,12 @@ body {
 }
 .form__submit:hover {
   opacity: 0.8;
+}
+
+.start-form {
+  width: 360px;
+  border: solid 1px #E6E6E6;
+  border-radius: 4px;
+  padding: 40px 38px 30px;
 }
 /*# sourceMappingURL=style.css.map */
