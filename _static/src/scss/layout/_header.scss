@@ -1,6 +1,6 @@
 @use '../global' as global;
 
-$header-height: 80px;
+$header-height: 70px;
 
 .header {
   max-width: 100%;
@@ -21,8 +21,13 @@ $header-height: 80px;
 
     .header__logo {
       max-width: 105px;
+      height: 70px;
       margin-right: auto;
       display: block;
+
+      img {
+        height: 100%;
+      }
     }
   }
 
@@ -45,6 +50,7 @@ $header-height: 80px;
 
     &__list {
       display: flex;
+      align-items: center;
     }
 
     &__item {
