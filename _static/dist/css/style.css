@@ -199,6 +199,9 @@ body {
   background-size: 12px;
   border: none;
 }
+.search-submit:hover {
+  opacity: 0.6;
+}
 
 .footer {
   background-color: #91a4e9;
@@ -246,6 +249,15 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   height: calc(100vh - 80px);
+}
+.page-login__title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.page-login__heading {
+  margin-bottom: 24px;
 }
 
 .page-siu {

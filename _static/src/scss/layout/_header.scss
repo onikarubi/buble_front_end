@@ -112,4 +112,8 @@ $header-height: 70px;
   background: #fff url(../img/ico-loupe.png) no-repeat center center;
   background-size: 12px;
   border: none;
+
+  &:hover {
+    opacity: .6;
+  }
 }
