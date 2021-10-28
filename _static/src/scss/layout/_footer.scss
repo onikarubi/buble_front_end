@@ -1,0 +1,16 @@
+@use '../global' as global;
+
+.footer {
+  background-color: global.$main-color;
+  height: 60px;
+
+  &__inner {
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 12px;
+    font-family: global.$en-font;
+    line-height: 60px;
+  }
+}

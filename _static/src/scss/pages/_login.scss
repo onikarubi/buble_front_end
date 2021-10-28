@@ -1,0 +1,18 @@
+@use '../global' as global;
+
+.page-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 80px);
+
+  &__title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+.page-login__heading {
+  margin-bottom: 24px;
+}

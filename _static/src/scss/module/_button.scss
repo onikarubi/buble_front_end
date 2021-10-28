@@ -1,0 +1,27 @@
+@use '../global' as global;
+
+.link-btn {
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 14px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 4px;
+  border: none;
+
+  &:hover {
+    color: #000;
+    opacity: .8;
+  }
+
+  &.light-btn {
+    background-color: global.$duplicate-color;
+    color: global.$base-color;
+  }
+
+  &.default-btn {
+    background-color: global.$base-color;
+    color: #fff;
+  }
+}
